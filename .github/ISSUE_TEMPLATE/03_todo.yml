@@ -1,0 +1,31 @@
+name: Todo 😩
+description: ONLY for repository contributors
+labels: [enhancement, chore]
+type: task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue template is **ONLY** for repository contributors to track miscellaneous chores that are 
+        neither feature implementations nor bug fixes.
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe motivation for task
+      description: |
+        A clear and concise explanation of why the task needs to be done and if applicable, its 
+        benefit(s).
+
+  - type: textarea
+    attributes:
+      label: Describe how to complete the task
+      description: A clear and concise description of how the task can be done.
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the chore here.
+    validations:
+      required: false
