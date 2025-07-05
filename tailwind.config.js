@@ -6,6 +6,9 @@ const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
       colors: {
         dimgray: "#696969",
         "dark-bg": "#121212",
@@ -75,6 +78,7 @@ const config = {
     },
   },
   plugins: [animate],
+  darkMode: "class",
 };
 
 export default config;
