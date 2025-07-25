@@ -20,9 +20,9 @@ export default function NavbarLinks() {
           className="scrambled-text-demo"
           duration={1.2}
           speed={0.5}
-          scrambleChars="ddsdcv"
+          scrambleChars="tawsdcv"
         >
-          CONTACT
+          PROJECTS
         </ScrambledText>
       </Button>
       <Button size={"lg"} variant={"blank"} className="cursor-target">
@@ -30,9 +30,9 @@ export default function NavbarLinks() {
           className="scrambled-text-demo"
           duration={1.2}
           speed={0.5}
-          scrambleChars="tawsdcv"
+          scrambleChars="ddsdcv"
         >
-          PROJECTS
+          CONTACT
         </ScrambledText>
       </Button>
     </div>

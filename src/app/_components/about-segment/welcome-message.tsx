@@ -3,12 +3,14 @@ import BlurText from "@/components/blur-text";
 import ScrambledText from "@/components/scrambled-text";
 import GradientText from "@/components/gradient-text";
 import RotatingText from "@/components/rotating-text";
+import { Icon } from "@iconify/react";
+import { HoverBorderGradient } from "@/components/border-gradient";
 
 export default function WelcomeMessage() {
   return (
     <main className="grid grid-cols-1 text-white text-4xl font-code">
       <div className="flex">
-        I’m
+        Hello I’m
         <BlurText
           text=" JunHao"
           delay={300}
@@ -31,7 +33,7 @@ export default function WelcomeMessage() {
           </GradientText>
         </div>
       </div>
-      <div className="">
+      <div className="pb-4">
         <div>to life with</div>
         <div className="font-semibold animate-colorCycle">
           <RotatingText
@@ -52,6 +54,21 @@ export default function WelcomeMessage() {
           />
         </div>
       </div>
+      <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className="bg-black bg-opacity-25 text-white flex items-center space-x-2  cursor-target"
+      >
+        <div className="flex text-sm">
+          Download Resume
+          <Icon
+            icon="material-symbols:download-rounded"
+            height={20}
+            width={26}
+            className="text-3xl cursor-pointer text-white text-center"
+          />
+        </div>
+      </HoverBorderGradient>
     </main>
   );
 }

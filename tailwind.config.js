@@ -15,7 +15,6 @@ const config = {
         dimgray: "#696969",
         "dark-bg": "#121212",
         "slate-grey": "#2f2f2f",
-        "hsbc-red": "#db0011",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

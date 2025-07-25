@@ -1,13 +1,16 @@
 "use client";
 
 import Navbar from "./_components/navbar/layout";
-import WelcomeMessage from "./_components/welcome-message";
+import WelcomeMessage from "./_components/about-segment/welcome-message";
 import DarkVeil from "@/components/dark-veil";
 import TargetCursor from "@/components/target-cursor";
+import { ProfileCard } from "./_components/about-segment/profile-card";
+import ProjectContent from "./_components/project-segment/layout";
+import BentoGridLayout from "./_components/project-segment/_components/bento-grid/layout";
 
 export default function Home() {
   return (
-    <main className="relative w-full min-h-screen overflow-hidden">
+    <main className="relative w-full min-h-screen overflow-hidden mb-8">
       {/*Background*/}
       <div className="w-full h-screen fixed inset-0">
         <DarkVeil />
@@ -15,9 +18,21 @@ export default function Home() {
       {/*Main Section*/}
       <section className="relative z-10">
         <TargetCursor spinDuration={2} hideDefaultCursor={true} />
-        <Navbar />
-        <div className="grid grid-cols-2 max-w-5xl mx-auto place-items-center h-[calc(100vh-4rem)]">
-          <WelcomeMessage />
+        <div className="fixed top-0 left-0 w-full z-50">
+          <Navbar />
+        </div>
+        {/*Top Section*/}
+        <div className="grid grid-cols-2 max-w-5xl mx-auto place-items-center h-screen pt-12">
+          <div>
+            <WelcomeMessage />
+          </div>
+          <div>
+            <ProfileCard />
+          </div>
+        </div>
+        <div className="max-w-5xl mx-auto place-items-center h-screen pt-12">
+          <ProjectContent />
+          <BentoGridLayout />
         </div>
       </section>
     </main>
