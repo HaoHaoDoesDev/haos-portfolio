@@ -5,7 +5,7 @@ import ScrambledText from "@/components/scrambled-text";
 export default function NavbarLinks() {
   return (
     <div>
-      <Button size={"lg"} variant={"blank"}>
+      <Button size={"default"} variant={"blank"}>
         <ScrambledText
           className="scrambled-text-demo"
           duration={1.2}

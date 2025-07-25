@@ -8,6 +8,8 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        code: ["Fira Code", "monospace"],
+        funnel: ["'Funnel Display'", "sans-serif"],
       },
       colors: {
         dimgray: "#696969",
@@ -70,10 +72,18 @@ const config = {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        colorCycle: {
+          "0%": { color: "#40ffaa" },
+          "25%": { color: "#4079ff" },
+          "50%": { color: "#40ffaa" },
+          "75%": { color: "#4079ff" },
+          "100%": { color: "#40ffaa" },
+        },
       },
       animation: {
         shine: "shine 5s linear infinite",
         gradient: "gradient 8s linear infinite",
+        colorCycle: "colorCycle 8s linear infinite",
       },
     },
   },
