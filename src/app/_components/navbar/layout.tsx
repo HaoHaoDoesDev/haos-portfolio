@@ -11,13 +11,14 @@ export default function Navbar() {
         <Image
           src="/logo/logo_v2-removebg-preview.png"
           alt="Remote Logo"
+          className="cursor-target"
           width={100}
           height={100}
         />
       </div>
       <div className="col-span-1 text-white flex items-center justify-center gap-4 bg-black bg-opacity-25 rounded-xl">
         <NavbarLinks />
-        <Button variant={"blank"}>
+        <Button variant={"blank"} className="cursor-target">
           <Icon icon={"gravity-ui:dots-9"} />
         </Button>
       </div>

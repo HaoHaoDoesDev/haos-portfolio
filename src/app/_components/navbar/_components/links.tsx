@@ -5,7 +5,7 @@ import ScrambledText from "@/components/scrambled-text";
 export default function NavbarLinks() {
   return (
     <div>
-      <Button size={"default"} variant={"blank"}>
+      <Button size={"default"} variant={"blank"} className="cursor-target">
         <ScrambledText
           className="scrambled-text-demo"
           duration={1.2}
@@ -15,7 +15,7 @@ export default function NavbarLinks() {
           ABOUT
         </ScrambledText>
       </Button>
-      <Button size={"lg"} variant={"blank"}>
+      <Button size={"lg"} variant={"blank"} className="cursor-target">
         <ScrambledText
           className="scrambled-text-demo"
           duration={1.2}
@@ -25,7 +25,7 @@ export default function NavbarLinks() {
           CONTACT
         </ScrambledText>
       </Button>
-      <Button size={"lg"} variant={"blank"}>
+      <Button size={"lg"} variant={"blank"} className="cursor-target">
         <ScrambledText
           className="scrambled-text-demo"
           duration={1.2}
