@@ -14,10 +14,7 @@ export default function Home() {
       </div>
       {/*Main Section*/}
       <section className="relative z-10">
-        <TargetCursor 
-          spinDuration={2}
-          hideDefaultCursor={true}
-        />
+        <TargetCursor spinDuration={2} hideDefaultCursor={true} />
         <Navbar />
         <div className="grid grid-cols-2 max-w-5xl mx-auto place-items-center h-[calc(100vh-4rem)]">
           <WelcomeMessage />
