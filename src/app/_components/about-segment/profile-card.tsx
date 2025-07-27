@@ -9,7 +9,7 @@ import GradientText from "@/components/gradient-text";
 export function ProfileCard() {
   return (
     <CardContainer className="inter-var cursor-target">
-      <CardBody className=" relative group/card dark:bg-black w-auto sm:w-[30rem] h-auto rounded-xl p-6">
+      <CardBody className=" relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6">
         <CardItem
           translateZ="50"
           className="flex text-xl font-bold text-white dark:text-white"
