@@ -6,7 +6,10 @@ import Image from "next/image";
 export default function AnimatedPinLinkVerse() {
   return (
     <div className="flex items-start justify-center">
-      <PinContainer title="/hsbc.com" href="https://twitter.com/mannupaaji">
+      <PinContainer
+        title="/linkverse-design/figma.com"
+        href="https://www.figma.com/proto/PDcvgXIL137o3NVEkpo9SS/Team-Six_DUX_Asg2_MobileApplication?node-id=55-68&t=oBLL6clVysum7yzz-1&scaling=scale-down&content-scaling=fixed&page-id=31%3A60&starting-point-node-id=55%3A68"
+      >
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[18rem] h-[20rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             LinkVerse App Design

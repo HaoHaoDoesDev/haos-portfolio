@@ -6,7 +6,10 @@ import Image from "next/image";
 export default function AnimatedPinFED() {
   return (
     <div className="flex items-start justify-center">
-      <PinContainer title="/hsbc.com" href="https://twitter.com/mannupaaji">
+      <PinContainer
+        title="/life-with-covid/html.com"
+        href="https://github.com/HaoHaoDoesDev"
+      >
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[18rem] h-[20rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             Life With COVID

@@ -6,6 +6,7 @@ import DarkVeil from "@/components/dark-veil";
 import TargetCursor from "@/components/target-cursor";
 import { ProfileCard } from "./_components/about-segment/profile-card";
 import ProjectContent from "./_components/project-segment/layout";
+import ContactContent from "./_components/contact-segment/layout";
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
         </div>
         <div className="max-w-5xl mx-auto pt-12">
           <ProjectContent />
+          <div className="pt-12">
+            <ContactContent />
+          </div>
         </div>
       </section>
     </main>
