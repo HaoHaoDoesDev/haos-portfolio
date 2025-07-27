@@ -6,11 +6,10 @@ import DarkVeil from "@/components/dark-veil";
 import TargetCursor from "@/components/target-cursor";
 import { ProfileCard } from "./_components/about-segment/profile-card";
 import ProjectContent from "./_components/project-segment/layout";
-import BentoGridLayout from "./_components/project-segment/_components/bento-grid/layout";
 
 export default function Home() {
   return (
-    <main className="relative w-full min-h-screen overflow-hidden mb-8">
+    <main className="relative w-full min-h-screen overflow-scroll mb-8">
       {/*Background*/}
       <div className="w-full h-screen fixed inset-0">
         <DarkVeil />
@@ -30,9 +29,8 @@ export default function Home() {
             <ProfileCard />
           </div>
         </div>
-        <div className="max-w-5xl mx-auto place-items-center h-screen pt-12">
+        <div className="max-w-5xl mx-auto pt-12">
           <ProjectContent />
-          <BentoGridLayout />
         </div>
       </section>
     </main>

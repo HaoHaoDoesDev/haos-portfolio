@@ -1,35 +1,36 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import RowsLayout from "./_components/rows/layout";
 import TabsDemo from "./_components/tabs-component";
-import BentoGridLayout from "./_components/bento-grid/layout";
-
-const tabs = [
-  {
-    label: "All Projects",
-    content: <BentoGridLayout />,
-    value: "all-projects",
-  },
-  {
-    label: "Web Applications",
-    content: <RowsLayout />,
-    value: "applications",
-  },
-  {
-    label: "Design",
-    content: <RowsLayout />,
-    value: "design",
-  },
-];
+import DesignBentoGridLayout from "./_components/bento-grid/design-bento";
+import AllProjectsBentoGridLayout from "./_components/bento-grid/all-projects-bento";
+import ApplicationsBentoGridLayout from "./_components/bento-grid/applications-bento";
 
 export default function ProjectContent() {
+  const tabs = [
+    {
+      label: "All Projects",
+      content: <AllProjectsBentoGridLayout />,
+      value: "all-projects",
+    },
+    {
+      label: "Applications",
+      content: <ApplicationsBentoGridLayout />,
+      value: "applications",
+    },
+    {
+      label: "Design",
+      content: <DesignBentoGridLayout />,
+      value: "design",
+    },
+  ];
+
   return (
-    <main className="relative w-full min-h-screen overflow-hidden mb-8">
-      <div className="flex text-white text-bold justify-center font-funnel max-w-xl mx-auto pt-8 text-4xl ">
+    <main className="relative w-full mb-8">
+      <div className="flex text-white text-bold justify-center font-funnel max-w-xl mx-auto text-4xl ">
         My Projects
       </div>
-      <div className="flex text-white text-bold justify-between items-center font-funnel text-2xl pt-12">
-        <div className="">
+      <div className="text-white font-funnel text-2xl pt-12 w-full">
+        <div>
           <TabsDemo tabs={tabs} />
         </div>
       </div>

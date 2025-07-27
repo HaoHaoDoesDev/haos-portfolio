@@ -35,14 +35,14 @@ export default function WelcomeMessage() {
       </div>
       <div className="pb-4">
         <div>to life with</div>
-        <div className="font-semibold animate-colorCycle">
+        <div className="font-code animate-colorCycle">
           <RotatingText
             texts={[
               "Good Quality Codes",
               "Thoughtful Designs",
               "User-First Mindset",
             ]}
-            mainClassName="text-White overflow-hidden"
+            mainClassName="overflow-hidden"
             staggerFrom="last"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}

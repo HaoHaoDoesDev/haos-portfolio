@@ -18,7 +18,7 @@ export default function TabsDemo({ tabs }: AdminTabsProps) {
 
   return (
     <Tabs defaultValue={defaultValue} className={`w-full max-w-full`}>
-      <TabsList>
+      <TabsList className="mb-4">
         {tabs.map(({ label, value }) => (
           <TabsTrigger key={value} value={value}>
             {label}

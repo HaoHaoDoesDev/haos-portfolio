@@ -32,7 +32,7 @@ export function ProfileCard() {
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src="/assets/ttest.jpg"
+            src="/assets/lolol.jpg"
             width={1000}
             height={1000}
             className="h-90 w-full object-cover rounded-xl"
