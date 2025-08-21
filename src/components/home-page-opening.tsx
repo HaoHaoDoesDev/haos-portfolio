@@ -4,11 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-export default function SplashScreen({
-  onFinish,
-}: {
-  onFinish: () => void;
-}) {
+export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   const [showAnimation, setShowAnimation] = useState(true);
 
   useEffect(() => {

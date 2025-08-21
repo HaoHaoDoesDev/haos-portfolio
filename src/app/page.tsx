@@ -29,9 +29,7 @@ export default function Home() {
       </section>
 
       {/* Splash overlay (only shows if not seen yet) */}
-      {!hasSeenSplash && (
-        <SplashScreen onFinish={setHasSeenSplash} />
-      )}
+      {!hasSeenSplash && <SplashScreen onFinish={setHasSeenSplash} />}
     </main>
   );
 }

@@ -21,7 +21,7 @@ export default function NavbarLinks() {
     { name: "ABOUT", link: routes.about_me_page.page },
     { name: "SKILLS", link: routes.skills_page.page },
     { name: "PROJECTS", link: routes.projects_page.page },
-    { name: "CONTACT", link: routes.contact_page.page }, 
+    { name: "CONTACT", link: routes.contact_page.page },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

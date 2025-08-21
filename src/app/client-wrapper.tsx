@@ -4,7 +4,11 @@ import React from "react";
 import DarkVeil from "@/components/dark-veil";
 import TargetCursor from "@/components/target-cursor";
 
-export default function ClientWrapper({ children }: { children: React.ReactNode }) {
+export default function ClientWrapper({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       {/* Global Background */}

@@ -11,7 +11,6 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
-
 interface NavbarProps {
   children: React.ReactNode;
   className?: string;
@@ -146,7 +145,6 @@ export const NavItems = ({ items, className }: NavItemsProps) => {
   );
 };
 
-
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   return (
     <motion.div
@@ -238,12 +236,7 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <Image
-        src="/logo/logo-no-text.png"
-        alt="logo"
-        width={40}
-        height={30}
-      />
+      <Image src="/logo/logo-no-text.png" alt="logo" width={40} height={30} />
     </a>
   );
 };
