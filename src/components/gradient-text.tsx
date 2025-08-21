@@ -21,7 +21,7 @@ export default function GradientText({
   };
 
   return (
-    <div className={`font-medium transition-shadow duration-500  ${className}`}>
+    <div className={`font-bold transition-shadow duration-500  ${className}`}>
       {showBorder && (
         <div
           className="absolute inset-0 z-0 pointer-events-none animate-gradient"

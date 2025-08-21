@@ -5,6 +5,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/3d-card";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import GradientText from "@/components/gradient-text";
+import { HoverBorderGradient } from "@/components/border-gradient";
 
 export function ProfileCard() {
   return (
@@ -40,7 +41,7 @@ export function ProfileCard() {
           />
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 items-center">
             <a
               href="https://www.instagram.com/junha_ohao"
               target="_blank"
@@ -74,17 +75,32 @@ export function ProfileCard() {
                 className="text-3xl cursor-pointer text-white"
               />
             </a>
-            <a
-              href="https://open.spotify.com/user/ongjunhao2609?si=3ffb4d9253b944a2"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() =>
+                navigator.clipboard.writeText("yourDiscordUsername#1234")
+              }
               className="cursor-target"
             >
               <Icon
-                icon="mdi:spotify"
+                icon="ic:baseline-discord"
                 className="text-3xl cursor-pointer text-white"
               />
-            </a>
+            </button>
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="bg-black bg-opacity-25 text-white flex cursor-target"
+            >
+              <div className="flex text-sm">
+                Download Resume
+                <Icon
+                  icon="material-symbols:download-rounded"
+                  height={20}
+                  width={26}
+                  className="text-3xl cursor-pointer text-white text-center"
+                />
+              </div>
+            </HoverBorderGradient>
           </div>
         </CardItem>
       </CardBody>
