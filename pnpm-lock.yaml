@@ -99,7 +99,7 @@ importers:
         specifier: ^0.34.33
         version: 0.34.38
       "@tabler/icons-react":
-        specifier: ^3.34.0
+        specifier: ^3.34.1
         version: 3.34.1(react@18.3.1)
       "@tanstack/react-query":
         specifier: ^5.62.7
@@ -216,7 +216,7 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1(three@0.177.0)
       motion:
-        specifier: ^12.17.0
+        specifier: ^12.23.7
         version: 12.23.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: 14.2.21

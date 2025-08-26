@@ -129,7 +129,7 @@ export const NavItems = ({ items, className }: NavItemsProps) => {
         <button
           onMouseEnter={() => setHovered(idx)}
           onClick={() => router.push(item.link)} // <-- use router.push
-          className="relative px-4 py-2 text-white hover:text-black cursor-pointer"
+          className="relative px-4 py-2 text-white hover:text-black cursor-pointer cursor-target"
           key={`link-${idx}`}
         >
           {hovered === idx && (
@@ -233,7 +233,7 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <a
-      href="#"
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <Image src="/logo/logo-no-text.png" alt="logo" width={40} height={30} />

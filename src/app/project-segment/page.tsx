@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import TabsDemo from "./_components/tabs-component";
 import DesignBentoGridLayout from "./_components/bento-grid/design-bento";
 import AllProjectsBentoGridLayout from "./_components/bento-grid/all-projects-bento";
