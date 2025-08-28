@@ -68,7 +68,7 @@ export default function WorkExperience() {
               className="space-y-2"
             >
               <h2 className="text-2xl text-white font-bold">{selected.role}</h2>
-              <p className="text-gray-500">{selected.period}</p>
+              <p className="text-gray-400">{selected.period}</p>
               <p className="mt-2 text-gray-400">{selected.description}</p>
             </motion.div>
           </AnimatePresence>

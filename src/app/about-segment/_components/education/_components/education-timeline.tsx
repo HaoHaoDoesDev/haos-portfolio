@@ -216,6 +216,12 @@ export default function EducationTimeline() {
               width={26}
               className="text-3xl cursor-pointer text-white text-center"
             />
+            <Icon
+              icon="mdi:github"
+              height={20}
+              width={26}
+              className="text-3xl cursor-pointer text-white text-center"
+            />
           </div>
           <p className="mb-8 font-funnel md:text-sm text-white">
             [2022] Stepped into the world of Augemented Reality and 3D Games.
@@ -269,7 +275,7 @@ export default function EducationTimeline() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip">
+    <div className="relative max-w-7xl overflow-clip mx-auto">
       <Timeline data={data} />
     </div>
   );

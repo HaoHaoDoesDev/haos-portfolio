@@ -10,6 +10,7 @@ import EducationTimeline from "./_components/education/_components/education-tim
 import ExperienceHeader from "./_components/work-experience/header-work";
 import WorkExperience from "./_components/work-experience/work-expereince";
 import CertificationsHeader from "./_components/certifications/header-certifications";
+import Certificates from "./_components/certifications/_components/certificates";
 
 export default function AboutContent() {
   return (
@@ -51,6 +52,7 @@ export default function AboutContent() {
             <WorkExperience />
           </div>
           <CertificationsHeader />
+          <Certificates />
         </FadeContent>
       </section>
     </main>
