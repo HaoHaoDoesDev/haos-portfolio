@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import DarkVeil from "@/components/dark-veil";
 import TargetCursor from "@/components/target-cursor";
+import Prism from "@/components/prism-background";
 
 export default function ClientWrapper({
   children,
@@ -13,7 +13,17 @@ export default function ClientWrapper({
     <>
       {/* Global Background */}
       <div className="w-full h-screen fixed inset-0 z-0">
-        <DarkVeil />
+        <Prism
+          animationType="rotate"
+          timeScale={0.15}
+          height={3.5}
+          baseWidth={4.9}
+          scale={3.6}
+          hueShift={0}
+          colorFrequency={1}
+          noise={0}
+          glow={1}
+        />
       </div>
 
       {/* Global Cursor */}
