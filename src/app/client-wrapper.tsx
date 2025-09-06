@@ -18,11 +18,11 @@ export default function ClientWrapper({
           timeScale={0.15}
           height={3.5}
           baseWidth={4.9}
-          scale={3.6}
+          scale={3.3}
           hueShift={0}
           colorFrequency={1}
           noise={0}
-          glow={1}
+          glow={0.7}
         />
       </div>
 
