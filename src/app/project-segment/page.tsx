@@ -38,8 +38,24 @@ export default function ProjectContent() {
           easing="ease-out"
           initialOpacity={0}
         >
-          <div className="space-x-8">
+          <div className="space-x-8 pt-8">
+            <div className="pt-20 pb-8">
+              <div className="font-funnel text-center text-gray-400">
+                MY MOST RECENT CREATION
+              </div>
+              <div className="font-sans text-center text-5xl text-white font-extrabold">
+                Project
+              </div>
+            </div>
             <ProjectHeader />
+            <div className="pb-8 pt-20">
+              <div className="font-funnel text-center text-gray-400">
+                MY COLLECTION OF PROJECTS
+              </div>
+              <div className="font-sans text-center text-5xl text-white font-extrabold">
+                Others
+              </div>
+            </div>
             <div className="w-full flex justify-center pb-20">
               <div className="max-w-6xl w-full flex justify-center">
                 <TabsDemo tabs={tabs} />
