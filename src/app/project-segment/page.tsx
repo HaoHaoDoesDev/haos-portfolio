@@ -3,6 +3,9 @@ import TabsDemo from "./_components/tabs-component";
 import DesignBentoGridLayout from "./_components/bento-grid/design-bento";
 import AllProjectsBentoGridLayout from "./_components/bento-grid/all-projects-bento";
 import ApplicationsBentoGridLayout from "./_components/bento-grid/applications-bento";
+import FadeContent from "@/components/fade-content";
+import Navbar from "../_components/navbar/layout";
+import ProjectHeader from "./_components/project-header";
 
 export default function ProjectContent() {
   const tabs = [
@@ -24,15 +27,27 @@ export default function ProjectContent() {
   ];
 
   return (
-    <main className="relative w-full mb-8">
-      <div className="flex text-white text-bold justify-center font-funnel max-w-xl mx-auto text-4xl p-4">
-        My Projects
-      </div>
-      <div className="text-white font-funnel text-2xl pt-12 w-full">
-        <div>
-          <TabsDemo tabs={tabs} />
+    <main className="relative w-full">
+      <section className="relative z-0">
+        <div className="fixed w-full z-50 ">
+          <Navbar />
         </div>
-      </div>
+        <FadeContent
+          blur={true}
+          duration={1000}
+          easing="ease-out"
+          initialOpacity={0}
+        >
+          <div className="space-x-8">
+            <ProjectHeader />
+            <div className="w-full flex justify-center pb-20">
+              <div className="max-w-6xl w-full flex justify-center">
+                <TabsDemo tabs={tabs} />
+              </div>
+            </div>
+          </div>
+        </FadeContent>
+      </section>
     </main>
   );
 }
