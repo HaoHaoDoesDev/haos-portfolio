@@ -29,7 +29,7 @@ export const TextItem = React.memo(
         <div className="text-white text-4xl md:text-6xl font-bold">
           {number}
         </div>
-        <div className="text-gray-400 font-funnel text-sm md:text-base">
+        <div className="text-white font-funnel text-sm md:text-base">
           {text}
         </div>
       </div>

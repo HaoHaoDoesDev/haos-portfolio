@@ -102,17 +102,20 @@ export function ProfileCard() {
               />
             </button>
             <HoverBorderGradient
-              containerClassName="rounded-full"
+              containerClassName="rounded-full z-50"
               as="button"
+              onClick={() =>
+                window.open("/assets/Resume_CV_OngJunHao.pdf", "_blank")
+              }
               className="bg-black bg-opacity-25 text-white flex cursor-target"
             >
-              <div className="flex text-sm">
+              <div className="flex text-sm items-center">
                 Download Resume
                 <Icon
                   icon="material-symbols:download-rounded"
                   height={20}
                   width={26}
-                  className="text-3xl cursor-pointer text-white text-center"
+                  className="ml-1 text-white"
                 />
               </div>
             </HoverBorderGradient>
