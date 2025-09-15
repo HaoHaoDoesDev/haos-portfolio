@@ -1,12 +1,30 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import Navbar from "../_components/navbar/layout";
+import FadeContent from "@/components/fade-content";
+import ContactHeader from "./_components/contact-header";
+import ContactInformation from "./_components/contact-information";
+import ContactIcons from "./_components/contact-icons";
 
 export default function ContactContent() {
   return (
-    <main className="relative w-full mb-8 pt-8 mt-8">
-      <div className="flex text-white text-bold justify-center font-funnel max-w-xl mx-auto text-4xl ">
-        Contact Me
-      </div>
+    <main className="relative w-full">
+      <section className="relative z-0">
+        <div className="fixed w-full z-50 ">
+          <Navbar />
+        </div>
+        <FadeContent
+          blur={true}
+          duration={1000}
+          easing="ease-out"
+          initialOpacity={0}
+        >
+          <div className="space-x-8 pt-8">
+            <ContactHeader />
+          </div>
+          <ContactInformation />
+          <ContactIcons />
+        </FadeContent>
+      </section>
     </main>
   );
 }

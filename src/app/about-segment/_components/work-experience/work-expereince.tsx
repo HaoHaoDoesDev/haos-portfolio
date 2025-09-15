@@ -16,7 +16,7 @@ const companies: Company[] = [
     role: "Full-Stack Developer Intern",
     period: "2024 - 2025",
     description:
-      "Focused on full-stack development for a client training management system project. The internship encompassed extensive frontend development using React, TailwindCSS, and modern JavaScript frameworks, alongside backend API development and database integration.  Built modular UI components and improved application performance by 30%.",
+      "Focused on full-stack development for a client training management system project. The internship encompassed extensive frontend development using React, TailwindCSS, and modern JavaScript frameworks, alongside backend API development and database integration. I had the opportunity to engage with clients to identify challenges and apply tailored software solutions that improved efficiency.",
   },
   {
     name: "JAVIS PTE LTD",
