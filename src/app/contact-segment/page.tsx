@@ -3,6 +3,7 @@ import Navbar from "../_components/navbar/layout";
 import FadeContent from "@/components/fade-content";
 import ContactHeader from "./_components/contact-header";
 import ContactInformation from "./_components/contact-information";
+import ContactIcons from "./_components/contact-icons";
 
 export default function ContactContent() {
   return (
@@ -21,6 +22,7 @@ export default function ContactContent() {
             <ContactHeader />
           </div>
           <ContactInformation />
+          <ContactIcons />
         </FadeContent>
       </section>
     </main>
