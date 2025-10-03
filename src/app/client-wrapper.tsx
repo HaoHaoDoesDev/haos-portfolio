@@ -3,6 +3,7 @@
 import React from "react";
 import TargetCursor from "@/components/target-cursor";
 import Prism from "@/components/prism-background";
+import LightRays from "@/components/background";
 
 export default function ClientWrapper({
   children,
@@ -13,16 +14,17 @@ export default function ClientWrapper({
     <>
       {/* Global Background */}
       <div className="w-full h-screen fixed inset-0 z-0">
-        <Prism
-          animationType="rotate"
-          timeScale={0.15}
-          height={3.5}
-          baseWidth={4.9}
-          scale={3.3}
-          hueShift={0}
-          colorFrequency={1}
-          noise={0}
-          glow={0.7}
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#00ffff"
+          raysSpeed={1.5}
+          lightSpread={0.8}
+          rayLength={1.2}
+          followMouse={true}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.05}
+          className="custom-rays"
         />
       </div>
 
