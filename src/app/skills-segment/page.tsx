@@ -19,7 +19,7 @@ export default function SkillSegment() {
           easing="ease-out"
           initialOpacity={0}
         >
-          <div className="space-x-8">
+          <div>
             <SkillsHeader />
             <div className="flex items-center justify-center mx-auto">
               <SkillBanner />
