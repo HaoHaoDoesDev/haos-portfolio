@@ -27,19 +27,41 @@ export default function ContactIcons() {
   ];
 
   return (
-    <div className="flex space-x-12 justify-center items-center pt-10 pb-10">
-      {links.map((link) => (
+    <div>
+      <div className="flex space-x-12 justify-center items-center pt-10">
         <a
-          key={link.label}
-          href={link.href}
+          href="/assets/HaoHaoDoesDev_CV_Updated.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={link.label}
-          className="text-3xl text-white hover:text-blue-500 transition-colors cursor-target"
+          className="cursor-target"
         >
-          <Icon icon={link.icon} />
+          <div className="flex">
+            <div className="text-white font-funnel text-sm">
+              Download Resume
+            </div>
+            <Icon
+              icon="material-symbols:download-rounded"
+              height={20}
+              width={26}
+              className="ml-1 text-white"
+            />
+          </div>
         </a>
-      ))}
+      </div>
+      <div className="flex space-x-12 justify-center items-center pt-5 pb-10">
+        {links.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.label}
+            className="text-3xl text-white hover:text-blue-500 transition-colors cursor-target"
+          >
+            <Icon icon={link.icon} />
+          </a>
+        ))}
+      </div>
     </div>
   );
 }

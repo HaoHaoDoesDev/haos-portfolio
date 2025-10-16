@@ -11,6 +11,7 @@ import ExperienceHeader from "./_components/work-experience/header-work";
 import WorkExperience from "./_components/work-experience/work-expereince";
 import CertificationsHeader from "./_components/certifications/header-certifications";
 import Certificates from "./_components/certifications/_components/certificates";
+import ContactIcons from "../contact-segment/_components/contact-icons";
 
 export default function AboutContent() {
   return (
@@ -53,6 +54,7 @@ export default function AboutContent() {
           </div>
           <CertificationsHeader />
           <Certificates />
+          <ContactIcons />
         </FadeContent>
       </section>
     </main>

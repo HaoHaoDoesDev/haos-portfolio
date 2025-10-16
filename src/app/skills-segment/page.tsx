@@ -5,6 +5,7 @@ import SkillsHeader from "./_components/skills-header";
 import SoftSkills from "./_components/soft-skills";
 import TechnicalSkills from "./_components/technilcal-skills/technical-skills-segment";
 import SkillBanner from "./_components/skills-banner";
+import ContactIcons from "../contact-segment/_components/contact-icons";
 
 export default function SkillSegment() {
   return (
@@ -26,6 +27,7 @@ export default function SkillSegment() {
             </div>
             <TechnicalSkills />
             <SoftSkills />
+            <ContactIcons />
           </div>
         </FadeContent>
       </section>

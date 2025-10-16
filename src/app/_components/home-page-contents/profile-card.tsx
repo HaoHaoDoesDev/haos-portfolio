@@ -5,11 +5,8 @@ import { CardBody, CardContainer, CardItem } from "@/components/3d-card";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import GradientText from "@/components/gradient-text";
-import { HoverBorderGradient } from "@/components/border-gradient";
 
 export function ProfileCard() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <CardContainer className="inter-var cursor-target  rounded-lg">
       <CardBody className=" relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6">
@@ -56,7 +53,6 @@ export function ProfileCard() {
 
         <CardItem translateZ="100" className="w-full mt-4">
           <div className="flex space-x-4 items-center">
-            {/* Old social icons row (optional to keep) */}
             <a
               href="https://www.instagram.com/junha_ohao"
               target="_blank"
@@ -101,16 +97,16 @@ export function ProfileCard() {
                 className="text-3xl cursor-pointer text-white"
               />
             </button>
-            <HoverBorderGradient
-              containerClassName="rounded-full z-50"
-              as="button"
-              onClick={() =>
-                window.open("/assets/Resume_CV_OngJunHao.pdf", "_blank")
-              }
-              className="bg-black bg-opacity-25 text-white flex cursor-target"
+            <a
+              href="/assets/HaoHaoDoesDev_CV_Updated.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-target"
             >
-              <div className="flex text-sm items-center">
-                Download Resume
+              <div className="flex">
+                <div className="text-white font-funnel text-sm">
+                  Download Resume
+                </div>
                 <Icon
                   icon="material-symbols:download-rounded"
                   height={20}
@@ -118,7 +114,7 @@ export function ProfileCard() {
                   className="ml-1 text-white"
                 />
               </div>
-            </HoverBorderGradient>
+            </a>
           </div>
         </CardItem>
       </CardBody>

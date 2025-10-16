@@ -6,11 +6,11 @@ export default function ProjectHeader() {
   return (
     <div>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto place-items-center pt-8 gap-y-4 md:gap-x-6 text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto place-items-center pt-8 gap-y-4 md:gap-x-6 text-white space-x-8">
           <div className="grid grid-cols-1">
             <TiltedCard
-              imageSrc="/projects-image/flowstate-project.png"
-              altText="Kendrick Lamar - GNX Album Cover"
+              imageSrc="/projects-image/f1-proj.png"
+              altText=""
               containerHeight="200px"
               containerWidth="350px"
               imageHeight="200px"
@@ -22,7 +22,7 @@ export default function ProjectHeader() {
               displayOverlayContent={true}
             />
           </div>
-          <div className="col-span-2 space-y-4">
+          <div className="col-span-2">
             <ProjectDescription />
           </div>
         </div>

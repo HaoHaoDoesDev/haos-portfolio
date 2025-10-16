@@ -6,6 +6,7 @@ import ApplicationsBentoGridLayout from "./_components/bento-grid/applications-b
 import FadeContent from "@/components/fade-content";
 import Navbar from "../_components/navbar/layout";
 import ProjectHeader from "./_components/project-header";
+import ContactIcons from "../contact-segment/_components/contact-icons";
 
 export default function ProjectContent() {
   const tabs = [
@@ -62,6 +63,7 @@ export default function ProjectContent() {
               </div>
             </div>
           </div>
+          <ContactIcons />
         </FadeContent>
       </section>
     </main>
