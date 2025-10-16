@@ -5,12 +5,8 @@ import { CardBody, CardContainer, CardItem } from "@/components/3d-card";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import GradientText from "@/components/gradient-text";
-import { HoverBorderGradient } from "@/components/border-gradient";
-import { AnimatedLinkBorder } from "@/components/ui/animated-link";
 
 export function ProfileCard() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <CardContainer className="inter-var cursor-target  rounded-lg">
       <CardBody className=" relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6">
@@ -102,7 +98,7 @@ export function ProfileCard() {
               />
             </button>
             <a
-              href="/assets/Resume_CV_OngJunHao.pdf"
+              href="/assets/HaoHaoDoesDev_CV_Updated.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-target"
