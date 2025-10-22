@@ -10,7 +10,6 @@ export default function ProjectHeader() {
           <div className="grid grid-cols-1">
             <TiltedCard
               imageSrc="/projects-image/f1-proj.png"
-              altText=""
               containerHeight="200px"
               containerWidth="350px"
               imageHeight="200px"
@@ -18,7 +17,7 @@ export default function ProjectHeader() {
               rotateAmplitude={12}
               scaleOnHover={1.1}
               showMobileWarning={false}
-              showTooltip={true}
+              showTooltip={false}
               displayOverlayContent={true}
             />
           </div>
