@@ -19,6 +19,7 @@ const Languages = [
   { id: 4, name: "JavaScript", icon: "logos:javascript" },
   { id: 5, name: "HTML5", icon: "vscode-icons:file-type-html" },
   { id: 6, name: "CSS3", icon: "devicon:css3" },
+  { id: 7, name: "Go", icon: "logos:go" },
 ];
 const FrontEnd = [
   { id: 1, name: "React", icon: "logos:react" },

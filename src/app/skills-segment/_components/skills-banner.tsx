@@ -16,6 +16,7 @@ import {
   SiDocker,
   SiMysql,
   SiPostgresql,
+  SiGo,
 } from "react-icons/si";
 
 const techLogos = [
@@ -50,6 +51,7 @@ const techLogos = [
   },
   { node: <SiDocker />, title: "Zod", href: "https://www.docker.com" },
   { node: <SiMysql />, title: "Zod", href: "https://www.mysql.com/" },
+  { node: <SiGo />, title: "Go", href: "https://go.dev/" },
   { node: <SiPostgresql />, title: "Zod", href: "https://www.postgresql.org" },
 ];
 
