@@ -48,7 +48,7 @@ export default function SoftSkills() {
           MY PERSONAL QUALITIES
         </div>
         <div className="font-sans text-center text-5xl text-white font-extrabold">
-          Soft
+          Generic
         </div>
       </div>
       <SoftSkillsCards skills={softSkills} />
