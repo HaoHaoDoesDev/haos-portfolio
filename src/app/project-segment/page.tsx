@@ -57,7 +57,7 @@ export default function ProjectContent() {
                 Others
               </div>
             </div>
-            <div className="w-full flex justify-center pb-20">
+            <div className="flex justify-center pb-20">
               <div className="max-w-6xl w-full flex justify-center">
                 <TabsDemo tabs={tabs} />
               </div>
