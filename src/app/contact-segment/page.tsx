@@ -4,6 +4,7 @@ import FadeContent from "@/components/fade-content";
 import ContactHeader from "./_components/contact-header";
 import ContactInformation from "./_components/contact-information";
 import ContactIcons from "./_components/contact-icons";
+import TestimonialContent from "./_components/testimonial-segment/page";
 
 export default function ContactContent() {
   return (
@@ -22,6 +23,7 @@ export default function ContactContent() {
             <ContactHeader />
           </div>
           <ContactInformation />
+          <TestimonialContent />
           <ContactIcons />
         </FadeContent>
       </section>
