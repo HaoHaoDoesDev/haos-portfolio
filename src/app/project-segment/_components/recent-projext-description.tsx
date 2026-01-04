@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 const items = [
   {
-    icon: "Project Title: F1 Through The Times",
+    icon: "Project Title: Digital Food Ordering System",
     description: "",
   },
   {
@@ -17,8 +17,9 @@ const techItems = [
   { icon: "logos:react", description: "React.js" },
   { icon: "logos:nextjs-icon", description: "Next.js" },
   { icon: "logos:tailwindcss-icon", description: "TailwindCSS" },
-  { icon: "ri:vercel-fill", description: "Vercel" },
-  { icon: "skill-icons:threejs-light", description: "Three.js" },
+  { icon: "cib:mysql", description: "MySQL" },
+  { icon: "material-icon-theme:docker", description: "Docker" },
+  { icon: "vscode-icons:file-type-gemini", description: "Gemini AI API" },
 ];
 
 export default function ProjectDescription() {
@@ -30,10 +31,10 @@ export default function ProjectDescription() {
           <p className="text-white font-funnel text-xl">{item.description}</p>
         </div>
       ))}
-      <div className="flex flex-wrap space-x-3">
+      <div className="flex flex-wrap">
         {techItems.map((tech, index) => (
-          <div key={index} className="flex items-center space-x-2">
-            <Icon icon={tech.icon} className="text-white text-sm" />
+          <div key={index} className="flex items-center space-x-1">
+            <Icon icon={tech.icon} className="text-white text-sm ml-2" />
             <p className="text-white font-funnel text-md">{tech.description}</p>
           </div>
         ))}
