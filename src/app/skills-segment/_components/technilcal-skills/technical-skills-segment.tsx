@@ -38,6 +38,7 @@ const BackEnd = [
   { id: 4, name: "Fastify", icon: "devicon:fastify" },
   { id: 5, name: "MongoDB", icon: "devicon:mongodb" },
   { id: 6, name: "PostgreSQL", icon: "lineicons:postgresql" },
+  { id: 7, name: "MySQL", icon: "simple-icons:mysql" },
 ];
 const Others = [
   { id: 1, name: "Adobe Photoshop", icon: "devicon:photoshop" },
