@@ -11,7 +11,6 @@ export default function Home() {
 
   return (
     <main className="relative w-full">
-      {/* Always render content */}
       <section className="relative z-0">
         <div className="fixed w-full z-50">
           <Navbar />
